@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<meta charset="UTF-8">
+	<title>json indent</title>
+<script>
+	function jsonthis(){
+
+		var data = JSON.parse( $('#t1').val() );
+		$('#t2').val( JSON.stringify(data,undefined,4) );
+	}
+</script>
+</head>
+<body>
+	<textarea name="" id="t1" cols="30" rows="10" onchange="jsonthis()"></textarea>
+	<textarea name="" id="t2" cols="30" rows="10" style="width:1000px;height:800px;"></textarea>
+</body>
+</html>
